@@ -1,0 +1,29 @@
+<!-- 자식 결합자는 바로 아래에 있는 직계 자식만 선택되는 거고, 자손 결합자는 바로 아래가 아닌, 아래에 있는 모든 것을 선택한다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      color: red;
+    }
+
+    .grandson{
+      color: blue;
+      margin: 10px 0 10px 25px;
+    }
+  </style>
+  </head>
+<body>
+  <div>
+    <p>자식</p>
+    <div>
+      <p class="grandson">손자</p>
+    </div>
+    <p>자식</p>
+  </div>
+</body>
+</html>
